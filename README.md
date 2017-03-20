@@ -1,1 +1,1 @@
-"The simple Python Projects" 
+"The simple Python Project" 
