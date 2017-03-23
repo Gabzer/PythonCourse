@@ -50,3 +50,16 @@ def get_letter_grade(score):
         return "F"
     
 print str(get_letter_grade(get_average(lloyd)))
+
+def get_class_average(students):
+    results = []
+    total = 0
+    for student in students:
+        total = round(get_average(student),2)
+        results.append(total)
+    return average(results)
+
+students = [lloyd, alice, tyler]
+total = get_class_average(students)
+print total
+print get_letter_grade(total)
