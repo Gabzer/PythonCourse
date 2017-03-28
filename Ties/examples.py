@@ -44,3 +44,21 @@ for char in phrase:
         print 'X',          #the , makes print on the same line
     else:
         print char,
+
+choices = ['pizza', 'massa', 'salada', 'nachos']
+############################################################
+#ENUMERATE fornece um índice correspondente a cada elemento na lista que você está percorrendo
+print 'Suas opcoes sao:'
+for index, item in enumerate(choices):
+    print index + 1, item
+############################################################
+#ZIP cria pares de elementos quando são usadas duas ou mais listas, e para no fim da lista mais curta
+list_a = [3, 9, 17, 15, 19]
+list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+
+for a, b in zip(list_a, list_b):
+    if a > b:
+        print a
+    else:
+        print b
+############################################################
